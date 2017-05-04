@@ -13,6 +13,8 @@ window.onload = function () {
     // 思路就是，所有都隐藏，再显示当前。
     for(var i = 0;i<button.length;i++){
         button[i].index = i;
+        divDetail[0].style.display = "block";
+        button[0].className = "active"
         button[i].onclick = function () {
             for(var i  = 0;i<button.length;i++){
                 button[i].className = '';
